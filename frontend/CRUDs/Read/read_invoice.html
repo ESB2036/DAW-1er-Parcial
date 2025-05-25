@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulta de Facturas</title>
+    <link rel="stylesheet" href="../css/read_styles.css" />
+  </head>
+  <body>
+    <button id="button-return">Regresar</button>
+
+    <div id="div-search">
+      <label for="search-filter">Buscar: </label>
+      <input
+        type="text"
+        id="search-filter"
+        style="width: 500px"
+        placeholder="Busque por N° factura, estado, N° reparación, técnico, vehículo o cliente"
+      />
+    </div>
+
+    <div id="div-table-invoices">
+      <table id="table-invoices">
+        <thead>
+          <tr>
+            <th>N° Factura</th>
+            <th>Fecha y Hora</th>
+            <th>Subtotal</th>
+            <th>IVA (15%)</th>
+            <th>Total</th>
+            <th>Método de Pago</th>
+            <th>Estado</th>
+            <th>N° Reparación</th>
+            <th>Tipo</th>
+            <th>Descripción</th>
+            <th>Diagnóstico</th>
+            <th>Técnico</th>
+            <th>Especialidad</th>
+            <th>Vehículo</th>
+            <th>Cliente</th>
+            <th>Cédula</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>12/05/2025 18:00</td>
+            <td>$150.00</td>
+            <td>$22.50</td>
+            <td>$172.50</td>
+            <td>Tarjeta de Crédito</td>
+            <td>Activo</td>
+            <td>1</td>
+            <td>Mecanico</td>
+            <td>El motor hace ruidos extraños al acelerar</td>
+            <td>Necesita cambio de bujías y ajuste de válvulas</td>
+            <td>Carlos Lopez</td>
+            <td>Mecanico</td>
+            <td>ABC1234 - Toyota Corolla</td>
+            <td>Roberto Vargas</td>
+            <td>1722599154</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="../js/read_invoice.js"></script>
+  </body>
+</html>

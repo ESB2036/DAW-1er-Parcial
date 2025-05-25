@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Persona</title>
+    <link rel="stylesheet" href="../css/create_update_styles.css" />
+  </head>
+  <body>
+    <button id="button-return">Regresar</button>
+    <div class="form-container">
+      <h2 id="form-title">Crear Persona</h2>
+      <form id="person-form">
+        <!-- Campos comunes para todos los tipos de persona -->
+        <div class="form-group">
+          <label for="cedula">Cédula:</label>
+          <input
+            type="text"
+            id="cedula"
+            name="cedula"
+            required
+            maxlength="10"
+            pattern="[0-9]{10}"
+            title="Ingrese una cédula ecuatoriana válida (10 dígitos)"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+
+        <div class="form-group">
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" required />
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            required
+            maxlength="10"
+            pattern="[0-9]{10}"
+            title="Ingrese un número de teléfono válido (10 dígitos)"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <!-- Campos específicos para administradores -->
+        <div id="admin-fields" class="hidden">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" />
+          </div>
+          <div class="form-group">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" />
+          </div>
+        </div>
+
+        <!-- Campos específicos para técnicos -->
+        <div id="tecnico-fields" class="hidden">
+          <div class="form-group">
+            <label for="especialidad">Especialidad:</label>
+            <select id="especialidad" name="especialidad">
+              <option value="" disabled selected>Seleccione...</option>
+              <option value="Mecanico">Mecánico</option>
+              <option value="Electricista">Electricista</option>
+              <option value="Pintor">Pintor</option>
+              <option value="Llantas">Llantas</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Campos específicos para clientes -->
+        <div id="cliente-fields" class="hidden">
+          <div class="form-group">
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" />
+          </div>
+        </div>
+
+        <button type="submit" id="submit-button">Crear</button>
+      </form>
+    </div>
+
+    <script src="../js/create_person.js"></script>
+  </body>
+</html>

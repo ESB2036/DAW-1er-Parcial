@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actualizar Factura</title>
+    <link rel="stylesheet" href="../css/create_update_styles.css" />
+  </head>
+  <body>
+    <button id="button-return">Regresar</button>
+
+    <div class="form-container">
+      <h2 id="form-title">Actualizar Factura</h2>
+      <form id="invoice-form">
+        <!-- Se cargan las facturas previamente registradas -->
+        <div class="form-group">
+          <label>Factura: </label>
+          <select name="factura" required>
+            <option value="" disabled selected>Seleccione...</option>
+            <option value="1">N° Factura #1</option>
+            <option value="2">N° Factura #2</option>
+            <option value="3">N° Factura #3</option>
+            <option value="4">N° Factura #4</option>
+            <option value="5">N° Factura #5</option>
+            <option value="6">N° Factura #6</option>
+            <option value="7">N° Factura #7</option>
+            <option value="8">N° Factura #8</option>
+            <option value="9">N° Factura #9</option>
+          </select>
+        </div>
+
+        <!-- Se cargan las reparaciones previamente registradas -->
+        <div class="form-group">
+          <label>Reparación: </label>
+          <select name="reparacion" required>
+            <option value="" disabled selected>Seleccione...</option>
+            <option value="1">N° Reparación #1</option>
+            <option value="2">N° Reparación #2</option>
+            <option value="3">N° Reparación #3</option>
+            <option value="4">N° Reparación #4</option>
+            <option value="5">N° Reparación #5</option>
+            <option value="6">N° Reparación #6</option>
+            <option value="7">N° Reparación #7</option>
+            <option value="8">N° Reparación #8</option>
+            <option value="9">N° Reparación #9</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Método de pago: </label>
+          <select name="metodoDePago" required>
+            <option value="" disabled selected>Seleccione...</option>
+            <option value="Efectivo">Efectivo</option>
+            <option value="TarjetaDeCredito">Tarjeta de crédito</option>
+            <option value="Transferencia">Transferencia</option>
+          </select>
+        </div>
+
+        <!-- Se obtiene del campo Costo de la reparación seleccionada -->
+        <div class="form-group">
+          <label for="subtotal">Subtotal:</label>
+          <input
+            type="number"
+            id="subtotal"
+            name="subtotal"
+            placeholder="0.00"
+            readonly
+            required
+          />
+        </div>
+
+        <!-- Se calcula automáticamente -->
+        <div class="form-group">
+          <label for="subtotal">IVA (15%):</label>
+          <input
+            type="number"
+            id="iva"
+            name="iva"
+            placeholder="0.00"
+            readonly
+            required
+          />
+        </div>
+
+        <!-- Se calcula automáticamente -->
+        <div class="form-group">
+          <label for="subtotal">Monto total:</label>
+          <input
+            type="number"
+            id="montoTotal"
+            name="montoTotal"
+            placeholder="0.00"
+            readonly
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Estado: </label>
+          <select name="metodoDePago" required>
+            <option value="" disabled selected>Seleccione...</option>
+            <option value="Activo">Activo</option>
+            <option value="Inactivo">Inactivo</option>
+          </select>
+        </div>
+
+        <button type="submit" id="submit-button">Actualizar</button>
+      </form>
+    </div>
+
+    <script src="../js/update_invoice.js"></script>
+  </body>
+</html>

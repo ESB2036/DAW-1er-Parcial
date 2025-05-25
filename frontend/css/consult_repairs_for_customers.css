@@ -1,0 +1,91 @@
+body {
+  background-color: #f0f0f0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+#button-return {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 16px;
+  background-color: #4a6fa5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+#button-return:hover {
+  background-color: #3a5a8a;
+}
+
+#div-search {
+  margin-top: 100px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+#div-search label {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#div-search input[type="text"] {
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+  background-color: white;
+}
+
+#div-table-repairs {
+  margin-top: 20px;
+  width: 95%;
+  max-width: 1200px;
+  max-height: 400px;
+  overflow: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#table-repairs {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #7c93b5;
+  color: white;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #eef;
+}

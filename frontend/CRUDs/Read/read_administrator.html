@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulta de Facturas</title>
+    <link rel="stylesheet" href="../css/read_styles.css" />
+  </head>
+  <body>
+    <button id="button-return">Regresar</button>
+
+    <div id="div-search">
+      <label for="search-filter">Buscar: </label>
+      <input
+        type="text"
+        id="search-filter"
+        style="width: 350px"
+        placeholder="Busque por cualquier valor"
+      />
+    </div>
+
+    <div id="div-table-invoices">
+      <table id="table-invoices">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Cédula</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Teléfono</th>
+            <th>Email</th>
+            <th>Username</th>
+            <th>Contraseña</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>0954381745</td>
+            <td>Sebastián</td>
+            <td>Ramírez</td>
+            <td>0990216856</td>
+            <td>sebitas@gmail.com</td>
+            <td>sebas</td>
+            <td>12345678</td>
+            <td>Activo</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="../js/read_administrator.js"></script>
+  </body>
+</html>

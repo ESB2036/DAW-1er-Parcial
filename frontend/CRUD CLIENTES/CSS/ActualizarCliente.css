@@ -1,0 +1,97 @@
+
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #ddd;
+}
+
+.contenedor-lista-clientes {
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #444;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 12px;
+  border-bottom: 1px solid #444;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #333;
+}
+
+.cliente-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cliente-item span {
+  flex: 1;
+  font-size: 16px;
+}
+
+.btn-editar {
+  background-color: #3a8ad8;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-editar:hover {
+  background-color: #2f6bb7;
+}
+.btn-eliminar {
+  background-color: #3a8ad8;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-eliminar:hover {
+  background-color: #2f6bb7;
+}
+
+.botones-navegacion {
+  text-align: right;
+  margin: 20px;
+}
+
+.btn-navegar {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-navegar:hover {
+  background-color: #218838;
+}

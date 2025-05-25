@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editar Vehículo</title>
+  <link rel="stylesheet" href="../CSS/editarcliente.css" />
+</head>
+<body>
+  <div class="botones-navegacion">
+    <a href="ActualizarClientes.html" class="btn-navegar"> Volver a Actualizar Clientes</a>
+  </div>
+
+  <div class="contenedor-formulario">
+    <form id="formulario-cliente">
+      <h2>Editar Clientes</h2>
+
+      <input type="hidden" id="indice-edicion" />
+
+      
+        <label for="cedula">Cédula:</label>
+        <input type="text" id="cedula" name="cedula" maxlength="10" pattern="[0-9]{10}" required title="Ingrese una cédula ecuatoriana válida (10 dígitos)" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" />
+        <span class="error-message" id="cedula-error"></span>
+      
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" maxlength="100" required />
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" maxlength="100" required />
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" maxlength="10" pattern="[0-9]{10}" required title="Ingrese un número de teléfono válido (10 dígitos)" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" maxlength="100" required />
+
+       <label for="direccion">Direccion:</label>
+        <input type="text" id="direccion" name="direccion" maxlength="150" required />
+
+      <button type="submit" id="btn-editar">Editar</button>
+    </form>
+  </div>
+
+  <script src="../js/editarCliente.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+/* Estilos generales */
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  margin: 0;
+}
+
+
+.contenedor-formulario {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  width: 320px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Formulario en columna */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Etiquetas */
+label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ddd;
+}
+
+/* Campos de texto y select */
+input, select {
+  padding: 10px;
+  margin-top: 6px;
+  background-color: #2e2e2e;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+/* Enfoque de los campos de texto */
+input:focus, select:focus {
+  border-color: #3a8ad8;
+  outline: none;
+}
+
+/* Estilo para los botones */
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #3a8ad8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2f6bb7;
+}
+
+/* Tabla de vehículos */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+th {
+  background-color: #2a2a2a;
+  font-weight: bold;
+}
+
+/* Botones de acciones dentro de la tabla */
+.acciones button {
+  margin: 0 3px;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.acciones button:hover {
+  background-color: #0056b3;
+}
+
+/* Botones de navegación */
+.botones-navegacion {
+  position: relative;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.btn-navegar {
+  position: absolute;
+  top: 0;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-navegar.izquierda {
+  left: 0;
+}
+
+.btn-navegar.derecha {
+  right: 0;
+}
+
+.btn-navegar:hover {
+  background-color: #0056b3;
+}
+
+/* Espaciado y márgenes */
+.margin-bottom-small {
+  margin-bottom: 10px;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 20px;
+}

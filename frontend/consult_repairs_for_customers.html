@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulta de Reparaciones</title>
+    <link rel="stylesheet" href="./css/consult_repairs_for_customers.css" />
+  </head>
+  <body>
+    <button id="button-return">Regresar</button>
+
+    <div id="div-search">
+      <label for="search-filter">Buscar: </label>
+      <input
+        type="text"
+        id="search-filter"
+        style="width: 350px"
+        placeholder="Busque por cédula, nombre, placa, marca o modelo"
+      />
+    </div>
+
+    <div id="div-table-repairs">
+      <table id="table-repairs">
+        <thead>
+          <tr>
+            <th>Cédula</th>
+            <th>Cliente</th>
+            <th>Placa</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Descripción</th>
+            <th>Estado</th>
+            <th>Diagnóstico</th>
+            <th>Fecha de ingreso</th>
+            <th>Técnico encargado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1316789914</td>
+            <td>Edú Sabando</td>
+            <td>XYZ-2036</td>
+            <td>Audi</td>
+            <td>A5</td>
+            <td>El motor ha dejado de funcionar</td>
+            <td>En Proceso</td>
+            <td>Daño mecánico grave: pistones, cigüeñal y válvulas rotas.</td>
+            <td>08 de mayo de 2025</td>
+            <td>Sebastián Ramírez- Mecánico</td>
+          </tr>
+          <tr>
+            <td>0987654321</td>
+            <td>Joel Gabino</td>
+            <td>ABC-123</td>
+            <td>Toyota</td>
+            <td>Corolla</td>
+            <td>Las llantas fueron pinchadas</td>
+            <td>Completada</td>
+            <td>Las llantas explotaron desde adentro, no desde afuera.</td>
+            <td>05 de abril de 2025</td>
+            <td>Ángel Pérez - Llantas</td>
+          </tr>
+          <tr>
+            <td>0998876543</td>
+            <td>Peter Mendoza</td>
+            <td>DEF-456</td>
+            <td>BMW</td>
+            <td>Serie 3</td>
+            <td>Cambiar la pintura del coche de rojo a negro</td>
+            <td>Pendiente</td>
+            <td>-</td>
+            <td>05 de mayo de 2025</td>
+            <td>Danny Lince - Pintor</td>
+          </tr>
+          <tr>
+            <td>0999888765</td>
+            <td>Jorge Suarez</td>
+            <td>GHI-789</td>
+            <td>Honda</td>
+            <td>Fit</td>
+            <td>No encienden las luces del auto</td>
+            <td>En Proceso</td>
+            <td>Las conexiones internas están carcomidas.</td>
+            <td>05 de mayo de 2025</td>
+            <td>Johan Cabrera - Electricista</td>
+          </tr>
+          <tr>
+            <td>0999888765</td>
+            <td>Michael Nieves</td>
+            <td>JKL-101</td>
+            <td>Hyundai</td>
+            <td>Elantra</td>
+            <td>
+              El motor se apaga solo cada cierto tiempo de que lo enciendo.
+            </td>
+            <td>Pendiente</td>
+            <td>-</td>
+            <td>30 de abril de 2025</td>
+            <td>Josué Granda - Mecánico</td>
+          </tr>
+          <tr>
+            <td>1316789914</td>
+            <td>Edú Sabando</td>
+            <td>XYZ-2036</td>
+            <td>Audi</td>
+            <td>A5</td>
+            <td>El motor ha dejado de funcionar</td>
+            <td>En Proceso</td>
+            <td>Daño mecánico grave: pistones, cigüeñal y válvulas rotas.</td>
+            <td>08 de mayo de 2025</td>
+            <td>Sebastián Ramírez- Mecánico</td>
+          </tr>
+          <tr>
+            <td>0987654321</td>
+            <td>Joel Gabino</td>
+            <td>ABC-123</td>
+            <td>Toyota</td>
+            <td>Corolla</td>
+            <td>Las llantas fueron pinchadas</td>
+            <td>Completada</td>
+            <td>Las llantas explotaron desde adentro, no desde afuera.</td>
+            <td>05 de abril de 2025</td>
+            <td>Ángel Pérez - Llantas</td>
+          </tr>
+          <tr>
+            <td>0998876543</td>
+            <td>Peter Mendoza</td>
+            <td>DEF-456</td>
+            <td>BMW</td>
+            <td>Serie 3</td>
+            <td>Cambiar la pintura del coche de rojo a negro</td>
+            <td>Pendiente</td>
+            <td>-</td>
+            <td>05 de mayo de 2025</td>
+            <td>Danny Lince - Pintor</td>
+          </tr>
+          <tr>
+            <td>0999888765</td>
+            <td>Jorge Suarez</td>
+            <td>GHI-789</td>
+            <td>Honda</td>
+            <td>Fit</td>
+            <td>No encienden las luces del auto</td>
+            <td>En Proceso</td>
+            <td>Las conexiones internas están carcomidas.</td>
+            <td>05 de mayo de 2025</td>
+            <td>Johan Cabrera - Electricista</td>
+          </tr>
+          <tr>
+            <td>0999888765</td>
+            <td>Michael Nieves</td>
+            <td>JKL-101</td>
+            <td>Hyundai</td>
+            <td>Elantra</td>
+            <td>
+              El motor se apaga solo cada cierto tiempo de que lo enciendo.
+            </td>
+            <td>Pendiente</td>
+            <td>-</td>
+            <td>30 de abril de 2025</td>
+            <td>Josué Granda - Mecánico</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="./js/consult_repairs_for_customers.js"></script>
+  </body>
+</html>
